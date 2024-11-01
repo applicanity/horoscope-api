@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "4f80702c-8a1f-4c14-8fcc-6e492331b918",
+		"name": "Inatec Horoscope",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24244838"
+	},
+	"item": [
+		{
+			"name": "Horoscope",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "birthday",
+							"value": "2024-12-20",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/horoscope",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"horoscope"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
