@@ -20,3 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/hello', 'App\Http\Controllers\ApiController@hello');
 Route::post('/horoscope', 'App\Http\Controllers\ApiController@checkHoroscope');
+
+Route::get('/admin/horoscopes', 'App\Http\Controllers\ApiController@getAllHoroscopes');
+Route::put('/admin/horoscope', 'App\Http\Controllers\ApiController@createHoroscope');
+Route::get('/admin/horoscope/{id}', 'App\Http\Controllers\ApiController@getHoroscope');
+Route::post('/admin/horoscope/{id}', 'App\Http\Controllers\ApiController@updateHoroscope');
+Route::delete('/admin/horoscope/{id}', 'App\Http\Controllers\ApiController@deleteHoroscope');
